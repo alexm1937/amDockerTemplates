@@ -1,0 +1,9 @@
+# use php-fpm package not regular php
+FROM php:8.4-fpm
+
+#PDO (php data object) MySQL extension
+RUN docker-php-ext-install pdo pdo_mysql
+
+#set working dir and copy in code
+WORKDIR /var/www/html
+COPY . .
