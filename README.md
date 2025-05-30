@@ -1,5 +1,7 @@
 php based server project, built using docker
 
+docker composer up --build to run
+
 docker-compose:
   -relies on db so that loads first with creds *switch to env file
   -builds context aka dockerfile from /php/dockerfile. php8.4-fpm.
